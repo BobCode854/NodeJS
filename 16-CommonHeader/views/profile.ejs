@@ -1,0 +1,15 @@
+<html>
+  <head> </head>
+  <body>
+    
+    <%- include('common/header') %> <!-- we have to load html here so we are witing %- -->
+    <h1>Welcome : <%= user.name %></h1> <!-- we have to load js object here %= -->
+    <h3>Email : <%= user.email %></h3>
+    <h3>City : <%= user.city %></h3>
+    <ul>
+      <% user.skills.forEach((item)=>{ %>
+          <li> <%= item %></li>
+     <% })%>
+    </ul>
+  </body>
+</html>
