@@ -4,6 +4,6 @@ module.exports = requestFilter = (request, response, next) => {
   } else if (request.query.age < 18) {
     response.send("you are under age. you cannot open this page");
   } else {
-    next();
+    next(); // next middleware called
   }
 };
