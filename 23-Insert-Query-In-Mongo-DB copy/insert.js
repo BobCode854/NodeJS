@@ -16,7 +16,7 @@ const insertQuery = async () => {
 
 const insertMultiple = async () => {
   let connection = await config();
-  let result = await connection.insertMany([
+  let result = connection.insertMany([
     {
       name: "UNO",
       brand: "YUNO",
